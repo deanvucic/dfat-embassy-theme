@@ -1,0 +1,370 @@
+// =========================================================
+// For creating breakpoints.
+// Use in order of smallest to largest:
+// div {
+//   font-size: rem(24);
+//   @include breakpoint(tablet) {
+//     font-size: rem(32);
+//   }
+//   @include breakpoint(desktop) {
+//     font-size: rem(48);
+//   }
+// }
+// =========================================================
+@mixin breakpoint($class) {
+  @if $class==desktop {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  }
+  @else if $class==large_tablet {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+  @else if $class==tablet {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @else if $class==mobile {
+    @media (max-width: 420px) {
+      @content;
+    }
+  }
+  @else {
+    @warn "Breakpoint mixin supports: desktop, large_tablet, tablet, mobile";
+  }
+}
+
+// =========================================================
+// For use on full width containers.
+// Centres the content using a max-width as specified.
+// Adds a padding for mobile margins.
+// =========================================================
+@mixin center-column($width) {
+  max-width: $width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: $mobile_column_padding;
+  padding-right: $mobile_column_padding;
+  box-sizing: content-box;
+}
+
+@mixin visually-hidden() {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@mixin transition-fade() {
+  transition-timing-function: $transition-easing;
+  transition-duration: $transition-timing-fast;
+  transition-property: background-color, border-color, color;
+}
+
+@function ui-kit-icon($filename) {
+  @return url("../../vendor/gov-au-ui-kit/assets/img/icons/"+$filename);
+}
+
+@mixin link-bar() {
+  padding-top: $default_padding;
+  padding-bottom: $default_padding;
+  margin-bottom: $default_padding;
+  background-color: $neutral_3;
+  overflow: auto;
+  text-align: center;
+  a {
+    @include curved-button;
+  }
+}
+
+// =========================================================
+// LISTING MIXINS
+// These mixins should be applied to in the following fashion:
+// .view-row {
+//   @include listing-component-wrapper;
+//   h2 {
+//     @include listing-component-heading;
+//   }
+//   .date {
+//     @include listing-component-subtext;
+//   }
+//   .image {
+//     @include listing-component-image;
+//   }
+//   .body {
+//     @include listing-component-body;
+//   }
+// }
+// =========================================================
+@mixin listing-component-wrapper() {
+  box-sizing: border-box;
+  position: relative;
+  padding: rem(30px);
+  margin-bottom: rem(30px);
+  height: calc(100% - #{rem(30px)});
+  background-color: white;
+}
+
+@mixin listing-component-image() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  a {
+    display: block;
+    border-bottom: 0;
+    transition: none;
+    &:hover, &:focus {
+      background-color: black;
+      img {
+        opacity: 0.6;
+      }
+    }
+  }
+  img {
+    display: table;
+    object-fit: cover;
+    object-position: center;
+    height: $listing_component_image_height;
+    width: 100%;
+  }
+}
+
+@mixin listing-component-heading() {
+  font-size: rem(24px);
+  line-height: 1.5em;
+}
+
+@mixin listing-component-subtext() {
+  font-size: rem(14px);
+  color: $neutral_2;
+  text-transform: uppercase;
+  margin-top: $default_padding;
+  margin-bottom: $default_padding;
+}
+
+@mixin listing-component-body() {
+  color: $neutral_1;
+}
+
+@mixin listing-card-with-banner-text-heading() {
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 1em;
+  font-weight: 400;
+  background-color: rgba($secondary_1, 0.75);
+  width: 100%;
+  a {
+    @include link-colours-remove;
+    color: $neutral_4;
+    &:hover, &:focus, &:active {
+      color: $neutral_4;
+      text-decoration: underline;
+    }
+  }
+}
+
+@mixin listing-card-with-banner-text() {
+  position: relative;
+  margin-bottom: rem(30px);
+  padding: 0;
+  max-width: 420px;
+  h2 {
+    @include listing-card-with-banner-text-heading;
+    position: absolute;
+    margin: 0;
+    bottom: 0;
+    padding: 1em;
+  }
+  img {
+    display: block;
+  }
+}
+
+// =========================================================
+// WYSIWYG MIXIN
+// =========================================================
+@mixin wysiwyg() {
+  table {
+    @extend .content-table;
+    thead {
+      tr {
+        border-bottom: 2px solid $grey;
+      }
+    }
+    td {
+      border-bottom: 1px solid #CCCCCC;
+    }
+    tfoot {
+      tr {
+        border-top: 2px solid $grey;
+      }
+      td {
+        border-bottom: 0;
+        font-weight: bold;
+      }
+    }
+  }
+  .introduction {
+    font-weight: 300;
+    font-size: rem(22px);
+    line-height: rem(36px);
+  }
+}
+
+@mixin large-title() {
+  color: $primary_1;
+  font-size: rem(36px);
+  font-weight: 300;
+  margin-top: 0;
+}
+
+@mixin medium-title() {
+  color: $primary_1;
+  font-size: rem(30px);
+  font-weight: 300;
+  margin-top: 0;
+}
+
+@mixin block-heading() {
+  color: $neutral_1;
+  font-size: rem(18px);
+  font-weight: 400;
+  @include breakpoint(large_tablet) {
+    @include medium-title;
+  }
+}
+
+@mixin curved-button() {
+  border-bottom: 0 !important;
+  color: $neutral_1 !important;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: $non-white;
+  border-radius: 10px;
+  padding-top: rem(10px) !important;
+  padding-bottom: rem(10px) !important;
+  padding-left: rem(22px) !important;
+  padding-right: rem(22px) !important;
+  &[rel~="external"] {
+    padding-right: 40px !important;
+  }
+  &:hover, &:focus {
+    background-color: white !important;
+  }
+}
+
+// =========================================================
+// SEARCH
+// =========================================================
+@mixin search-text-field() {
+  margin: 0;
+  height: rem(52px);
+  background-color: white;
+  border: 1px solid $neutral_3;
+  z-index: 1;
+  position: relative;
+}
+
+@mixin search-submit-button() {
+  @include hide-text;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  width: rem(52px);
+  height: rem(52px);
+  box-sizing: border-box;
+  background-color: $dfus_pantone_247;
+  border: 1px solid $neutral_3;
+  border-left: 0;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(../images/svg/magnifying_glass.svg);
+  &:hover, &:focus {
+    background-image: url(../images/svg/magnifying_glass_hover.svg);
+    background-color: $neutral_1;
+  }
+}
+
+// =========================================================
+// PANELS
+// Sidebar / No Sidebar content layouts need different
+// breakpoints. @include and set the breakpoint to use on
+// different sidebar configurations.
+// =========================================================
+@mixin panel-display-layouts($breakpoint) {
+  // Common panel styles
+  .panel-panel {
+    float: none;
+    width: 100%;
+    &>.inside {
+      margin: 0;
+    }
+  }
+  .panel-col-last {
+    @include breakpoint($breakpoint) {
+      @include omega();
+    }
+  }
+  // Two Columns (50 50)
+  &.panel-2col, &.panel-2col-bricks, &.panel-2col-stacked {
+    .panel-col-first, .panel-col-last {
+      @include breakpoint($breakpoint) {
+        @include span-columns(6 of 12);
+      }
+    }
+  }
+  // Three Columns (25 50 25)
+  &.panel-3col, &.panel-3col-stacked {
+    .panel-col-first, .panel-col-last {
+      @include breakpoint($breakpoint) {
+        @include span-columns(3 of 12);
+      }
+    }
+    .panel-col {
+      @include breakpoint($breakpoint) {
+        @include span-columns(6 of 12);
+      }
+    }
+  }
+  // Three Columns (33 33 33)
+  &.panel-3col-33, &.panel-3col-33-stacked {
+    .panel-col-first, .panel-col-last, .panel-col {
+      @include breakpoint($breakpoint) {
+        @include span-columns(4 of 12);
+      }
+    }
+  }
+}
+
+// =========================================================
+// LINKS
+// =========================================================
+@mixin link-colours-remove() {
+  text-decoration: none;
+  outline: none;
+  border-bottom: 0;
+  transition-timing-function: none;
+  transition-duration: none;
+  transition-property: none;
+  &:hover, &:focus {
+    background-color: initial;
+    color: initial;
+  }
+  &[rel~='external'] {
+    display: inline;
+    position: relative;
+    margin-right: initial;
+    &::after {
+      display: none;
+    }
+  }
+}

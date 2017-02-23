@@ -1,0 +1,20 @@
+body.page-taxonomy {
+  #content {
+    // Hide content header on taxonomy pages.
+    .content-header {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+      .breadcrumbs--inverted {
+        display: none;
+      }
+      .page__title {
+        @include visually-hidden;
+      }
+    }
+  }
+}

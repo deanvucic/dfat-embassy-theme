@@ -1,0 +1,14 @@
+body.node-type-staff {
+  .node-staff {
+    .field.field-name-field-image {
+      height: auto;
+      width: 100%;
+      @include breakpoint(tablet) {
+        margin-top: 0;
+        margin-left: $default_padding;
+        width: 50%;
+        float: right;
+      }
+    }
+  }
+}

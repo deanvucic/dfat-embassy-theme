@@ -1,0 +1,6 @@
+# Local dev tools #
+###################
+.vagrant
+.bundle
+node_modules
+.sass-cache
