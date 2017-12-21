@@ -29,8 +29,17 @@ settings[dfus_theme_override_image_styles] = 1
 
 plugins[panels][layouts] = panels-layouts
 
-;breakpoints[desktop] = (min-width: 1200px)
-;breakpoints[large_tablet] = (min-width: 1024px)
-;breakpoints[tablet] = (min-width: 768px)
-;breakpoints[mobile] = (max-width: 420px)
+breakpoints[desktop] = (min-width: 1025px)
+breakpoints[tablet] = (min-width: 668px) and (max-width: 1024px)
+breakpoints[mobilewide] = (min-width: 415px) and (max-width: 667px)
+breakpoints[mobile] = (max-width: 375px)
+
+multipliers[desktop][] = 1x
+multipliers[desktop][] = 2x
+multipliers[tablet][] = 1x
+multipliers[tablet][] = 2x
+multipliers[mobilewide][] = 1x
+multipliers[mobilewide][] = 2x
+multipliers[mobile][] = 1x
+multipliers[mobile][] = 2x
 

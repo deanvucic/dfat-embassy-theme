@@ -313,16 +313,14 @@
     @include breakpoint($breakpoint) {
       @include omega();
     }
-  }
-  // Two Columns (50 50)
+  } // Two Columns (50 50)
   &.panel-2col, &.panel-2col-bricks, &.panel-2col-stacked {
     .panel-col-first, .panel-col-last {
       @include breakpoint($breakpoint) {
         @include span-columns(6 of 12);
       }
     }
-  }
-  // Three Columns (25 50 25)
+  } // Three Columns (25 50 25)
   &.panel-3col, &.panel-3col-stacked {
     .panel-col-first, .panel-col-last {
       @include breakpoint($breakpoint) {
@@ -334,8 +332,7 @@
         @include span-columns(6 of 12);
       }
     }
-  }
-  // Three Columns (33 33 33)
+  } // Three Columns (33 33 33)
   &.panel-3col-33, &.panel-3col-33-stacked {
     .panel-col-first, .panel-col-last, .panel-col {
       @include breakpoint($breakpoint) {

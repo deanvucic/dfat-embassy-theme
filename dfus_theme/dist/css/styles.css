@@ -8197,9 +8197,21 @@ img {
 @media (min-width: 768px) {
   .region-footer .block-menu .content > ul.menu > li, .region-footer .block-menu .content > .menu-block-wrapper > ul.menu > li, .region-footer .block-menu-block .content > ul.menu > li, .region-footer .block-menu-block .content > .menu-block-wrapper > ul.menu > li {
     display: table-cell;
-    margin-bottom: 0;
     margin-bottom: 1.375rem;
+    padding-right: 10px;
   }
+}
+
+.region-footer .block-menu .content > .menu-block-wrapper > ul.menu > li > a, .region-footer .block-menu .content > .menu-block-wrapper > ul.menu > li > span.no-link, .region-footer .block-menu-block .content > .menu-block-wrapper > ul.menu > li > a, .region-footer .block-menu-block .content > .menu-block-wrapper > ul.menu > li > span.no-link {
+  display: inline-block;
+  vertical-align: top;
+  height: 45px;
+  border-bottom: none !important;
+}
+
+.region-footer .block-menu .content > .menu-block-wrapper > ul.menu > li > a:hover, .region-footer .block-menu .content > .menu-block-wrapper > ul.menu > li > a:focus, .region-footer .block-menu .content > .menu-block-wrapper > ul.menu > li > span.no-link:hover, .region-footer .block-menu .content > .menu-block-wrapper > ul.menu > li > span.no-link:focus, .region-footer .block-menu-block .content > .menu-block-wrapper > ul.menu > li > a:hover, .region-footer .block-menu-block .content > .menu-block-wrapper > ul.menu > li > a:focus, .region-footer .block-menu-block .content > .menu-block-wrapper > ul.menu > li > span.no-link:hover, .region-footer .block-menu-block .content > .menu-block-wrapper > ul.menu > li > span.no-link:focus {
+  background: none !important;
+  color: inherit !important;
 }
 
 .region-footer .block-menu .content ul.menu, .region-footer .block-menu-block .content ul.menu {
@@ -9510,7 +9522,7 @@ body #content .view.view-latest-news-slider .field-name-field-image img {
 
 @media (min-width: 768px) {
   body #content .view.view-latest-news-slider .field-name-field-image img {
-    height: 38.125rem;
+    height: 26.25rem;
   }
 }
 
@@ -11428,8 +11440,8 @@ body.page-our-locations #content .view .pager, body.page-events #content .view .
       -ms-flex-align: center;
           align-items: center;
   color: white;
-  padding-top: 2.375rem;
-  padding-bottom: 2.375rem;
+  padding-top: 1.375rem;
+  padding-bottom: 1.375rem;
 }
 
 #block-govcms-social-links-services .inner-wrapper h2, #block-govcms-social-links-services .inner-wrapper .display {

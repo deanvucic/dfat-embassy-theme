@@ -261,7 +261,7 @@ body #content .view.view-latest-news-slider {
       display: block;
       width: 100%;
       @include breakpoint(tablet) {
-        height: rem(610px);
+        height: rem(420px);
       }
     }
   }

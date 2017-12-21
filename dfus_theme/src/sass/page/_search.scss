@@ -1,7 +1,6 @@
 #content {
   .search-form {
-    @include center-column($desktop_content_column);
-    // 'Page not found' form has small differences from the search page version.
+    @include center-column($desktop_content_column); // 'Page not found' form has small differences from the search page version.
     .page-search404 & {
       padding-left: 0;
       padding-right: 0;
@@ -20,8 +19,7 @@
       }
     }
     .form-item {
-      margin: 0;
-      // IE 10 Fix - using calc to overcome miscalculation of 100% with flex.
+      margin: 0; // IE 10 Fix - using calc to overcome miscalculation of 100% with flex.
       width: calc(100% - #{rem(52px)});
     }
     input.form-text {

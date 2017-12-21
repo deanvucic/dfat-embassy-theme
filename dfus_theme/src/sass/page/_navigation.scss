@@ -12,8 +12,7 @@
     ul.sf-menu {
       display: table;
       width: 100%;
-      position: relative;
-      // If JS is enabled - hide sub nav menus until superfish finishes loading.
+      position: relative; // If JS is enabled - hide sub nav menus until superfish finishes loading.
       &:not(.superfish-processed) {
         &>li>ul {
           html:not(.no-js) & {

@@ -53,8 +53,7 @@ form.webform-client-form {
     .description {
       font-size: rem(14px);
     }
-  }
-  // =========================================================
+  } // =========================================================
   // SELECTORS - CHECKBOX, SELECT, RADIO, LIST
   // =========================================================
   .webform-component-checkboxes {
@@ -74,8 +73,7 @@ form.webform-client-form {
       width: 100%;
       height: auto;
     }
-  }
-  // =========================================================
+  } // =========================================================
   // DATE & TIME
   // =========================================================
   .webform-component-date {
@@ -139,8 +137,7 @@ form.webform-client-form {
         display: inline;
       }
     }
-  }
-  // =========================================================
+  } // =========================================================
   // GRID
   // =========================================================
   .webform-component-grid {
@@ -152,8 +149,7 @@ form.webform-client-form {
     }
     table.sticky-header {
       background-color: white;
-      z-index: 1;
-      // Values below taken directly from `vendor/gov-au-ui-kit/assets/sass/components/_tables.scss`
+      z-index: 1; // Values below taken directly from `vendor/gov-au-ui-kit/assets/sass/components/_tables.scss`
       th {
         border-bottom: solid 1px $light-grey;
         padding: $tiny-spacing;
@@ -195,8 +191,7 @@ form.webform-client-form {
         }
       }
     }
-  }
-  // =========================================================
+  } // =========================================================
   // FILE
   // =========================================================
   .webform-component-file {
@@ -223,8 +218,7 @@ form.webform-client-form {
         }
       }
     }
-  }
-  // =========================================================
+  } // =========================================================
   // FIELDSET
   // =========================================================
   .webform-component-fieldset {
@@ -236,8 +230,7 @@ form.webform-client-form {
     .form-item {
       margin-top: 0;
     }
-  }
-  // =========================================================
+  } // =========================================================
   // PROGRESS BAR
   // =========================================================
   .webform-previous {

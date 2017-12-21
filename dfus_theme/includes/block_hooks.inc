@@ -57,7 +57,7 @@ function dfus_theme_block_view_alter(&$data, $block) {
       }
     }
 
-    foreach (['facebook', 'twitter', 'youtube', 'vimeo', 'flickr', 'rss', 'email'] as $service) {
+    foreach (['facebook', 'twitter', 'youtube', 'vimeo', 'flickr', 'instagram', 'linkedin', 'rss', 'email'] as $service) {
       $field_name = 'field_' . $service . '_url';
       if ($posts && !empty($posts->$field_name)) {
         $field = $posts->$field_name;
@@ -77,9 +77,6 @@ function dfus_theme_block_view_alter(&$data, $block) {
         else {
           unset($data['content'][$service]);
         }
-      }
-      else {
-        unset($data['content'][$service]);
       }
     }
 
