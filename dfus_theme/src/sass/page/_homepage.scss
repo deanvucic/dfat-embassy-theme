@@ -23,9 +23,9 @@
   }
   .video-filter {
     iframe {
-      width: 100%;
+      width: 640px;
       @include breakpoint(desktop) {
-        height: 658px;
+        height: 360px;
       }
     }
   }
@@ -258,6 +258,7 @@ body #content .view.view-latest-news-slider {
     img {
       height: rem(225px);
       object-fit: cover;
+      object-position: 100% 20%; // The focal point wasn't set so I added one.
       display: block;
       width: 100%;
       @include breakpoint(tablet) {
@@ -435,7 +436,7 @@ body #content .view.view-latest-news-slider {
   margin-bottom: $default_padding;
 }
 
-.view-display-id-block_locations, .view-display-id-page_locations {
+.view-display-id-block_locations, .view-display-id-page_locations, .view-display-id-homepagetiles {
   .view-content {
     @include breakpoint(tablet) {
       @include outer-container(100%);

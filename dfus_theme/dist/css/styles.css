@@ -8843,12 +8843,12 @@ ul.tabs.primary {
 }
 
 .front .video-filter iframe {
-  width: 100%;
+  width: 640px;
 }
 
 @media (min-width: 1200px) {
   .front .video-filter iframe {
-    height: 658px;
+    height: 360px;
   }
 }
 
@@ -9514,8 +9514,9 @@ body #content .view.view-latest-news-slider .view-content li.views-row .node.vie
 
 body #content .view.view-latest-news-slider .field-name-field-image img {
   height: 14.0625rem;
-  font-family: "object-fit:cover";
+  font-family: "object-fit:cover;object-position:100% 20%";
   object-fit: cover;
+  object-position: 100% 20%;
   display: block;
   width: 100%;
 }
@@ -10057,12 +10058,12 @@ body #content .view.view-latest-news-slider .slider-controls ul li {
 }
 
 @media (min-width: 768px) {
-  .view-display-id-block_locations .view-content, .view-display-id-page_locations .view-content {
+  .view-display-id-block_locations .view-content, .view-display-id-page_locations .view-content, .view-display-id-homepagetiles .view-content {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
-  .view-display-id-block_locations .view-content::after, .view-display-id-page_locations .view-content::after {
+  .view-display-id-block_locations .view-content::after, .view-display-id-page_locations .view-content::after, .view-display-id-homepagetiles .view-content::after {
     clear: both;
     content: "";
     display: table;
@@ -10070,61 +10071,61 @@ body #content .view.view-latest-news-slider .slider-controls ul li {
 }
 
 @media (min-width: 768px) {
-  .view-display-id-block_locations .view-content .views-row, .view-display-id-page_locations .view-content .views-row {
+  .view-display-id-block_locations .view-content .views-row, .view-display-id-page_locations .view-content .views-row, .view-display-id-homepagetiles .view-content .views-row {
     float: left;
     display: block;
     margin-right: 2.7461357194%;
     width: 48.6269321403%;
   }
-  .view-display-id-block_locations .view-content .views-row:last-child, .view-display-id-page_locations .view-content .views-row:last-child {
+  .view-display-id-block_locations .view-content .views-row:last-child, .view-display-id-page_locations .view-content .views-row:last-child, .view-display-id-homepagetiles .view-content .views-row:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 1024px) {
-  .view-display-id-block_locations .view-content .views-row, .view-display-id-page_locations .view-content .views-row {
+  .view-display-id-block_locations .view-content .views-row, .view-display-id-page_locations .view-content .views-row, .view-display-id-homepagetiles .view-content .views-row {
     float: left;
     display: block;
     margin-right: 2.7461357194%;
     width: 31.502576187%;
   }
-  .view-display-id-block_locations .view-content .views-row:last-child, .view-display-id-page_locations .view-content .views-row:last-child {
+  .view-display-id-block_locations .view-content .views-row:last-child, .view-display-id-page_locations .view-content .views-row:last-child, .view-display-id-homepagetiles .view-content .views-row:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 768px) {
-  .view-display-id-block_locations .view-content .views-row:nth-child(2n), .view-display-id-page_locations .view-content .views-row:nth-child(2n) {
+  .view-display-id-block_locations .view-content .views-row:nth-child(2n), .view-display-id-page_locations .view-content .views-row:nth-child(2n), .view-display-id-homepagetiles .view-content .views-row:nth-child(2n) {
     margin-right: 0;
   }
 }
 
 @media (min-width: 1024px) {
-  .view-display-id-block_locations .view-content .views-row:nth-child(2n), .view-display-id-page_locations .view-content .views-row:nth-child(2n) {
+  .view-display-id-block_locations .view-content .views-row:nth-child(2n), .view-display-id-page_locations .view-content .views-row:nth-child(2n), .view-display-id-homepagetiles .view-content .views-row:nth-child(2n) {
     margin-right: 2.7461357194%;
   }
 }
 
 @media (min-width: 1024px) {
-  .view-display-id-block_locations .view-content .views-row:nth-child(3n), .view-display-id-page_locations .view-content .views-row:nth-child(3n) {
+  .view-display-id-block_locations .view-content .views-row:nth-child(3n), .view-display-id-page_locations .view-content .views-row:nth-child(3n), .view-display-id-homepagetiles .view-content .views-row:nth-child(3n) {
     margin-right: 0;
   }
 }
 
-.view-display-id-block_locations .view-content .views-row h2, .view-display-id-block_locations .view-content .views-row .display, .view-display-id-page_locations .view-content .views-row h2, .view-display-id-page_locations .view-content .views-row .display {
+.view-display-id-block_locations .view-content .views-row h2, .view-display-id-block_locations .view-content .views-row .display, .view-display-id-page_locations .view-content .views-row h2, .view-display-id-page_locations .view-content .views-row .display, .view-display-id-homepagetiles .view-content .views-row h2, .view-display-id-homepagetiles .view-content .views-row .display {
   font-size: 1.5rem;
   line-height: 1.5em;
   margin-top: 0;
 }
 
-.view-display-id-block_locations .view-content .views-row .taxonomy-term, .view-display-id-page_locations .view-content .views-row .taxonomy-term {
+.view-display-id-block_locations .view-content .views-row .taxonomy-term, .view-display-id-page_locations .view-content .views-row .taxonomy-term, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term {
   position: relative;
   margin-bottom: 1.875rem;
   padding: 0;
   max-width: 420px;
 }
 
-.view-display-id-block_locations .view-content .views-row .taxonomy-term h2, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display {
+.view-display-id-block_locations .view-content .views-row .taxonomy-term h2, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term h2, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term .display {
   box-sizing: border-box;
   display: inline-block;
   padding: 1em;
@@ -10137,7 +10138,7 @@ body #content .view.view-latest-news-slider .slider-controls ul li {
   padding: 1em;
 }
 
-.view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a {
+.view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term h2 a, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term .display a {
   text-decoration: none;
   outline: none;
   border-bottom: 0;
@@ -10147,27 +10148,27 @@ body #content .view.view-latest-news-slider .slider-controls ul li {
   color: #F0F3F5;
 }
 
-.view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a:hover, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a:hover, .view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a:focus, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a:focus, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a:hover, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a:hover, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a:focus, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a:focus {
+.view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a:hover, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a:hover, .view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a:focus, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a:focus, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a:hover, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a:hover, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a:focus, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a:focus, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term h2 a:hover, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term .display a:hover, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term h2 a:focus, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term .display a:focus {
   background-color: initial;
   color: initial;
 }
 
-.view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a[rel~='external'], .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a[rel~='external'], .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a[rel~='external'], .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a[rel~='external'] {
+.view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a[rel~='external'], .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a[rel~='external'], .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a[rel~='external'], .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a[rel~='external'], .view-display-id-homepagetiles .view-content .views-row .taxonomy-term h2 a[rel~='external'], .view-display-id-homepagetiles .view-content .views-row .taxonomy-term .display a[rel~='external'] {
   display: inline;
   position: relative;
   margin-right: initial;
 }
 
-.view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a[rel~='external']::after, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a[rel~='external']::after, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a[rel~='external']::after, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a[rel~='external']::after {
+.view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a[rel~='external']::after, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a[rel~='external']::after, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a[rel~='external']::after, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a[rel~='external']::after, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term h2 a[rel~='external']::after, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term .display a[rel~='external']::after {
   display: none;
 }
 
-.view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a:hover, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a:hover, .view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a:focus, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a:focus, .view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a:active, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a:active, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a:hover, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a:hover, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a:focus, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a:focus, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a:active, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a:active {
+.view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a:hover, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a:hover, .view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a:focus, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a:focus, .view-display-id-block_locations .view-content .views-row .taxonomy-term h2 a:active, .view-display-id-block_locations .view-content .views-row .taxonomy-term .display a:active, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a:hover, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a:hover, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a:focus, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a:focus, .view-display-id-page_locations .view-content .views-row .taxonomy-term h2 a:active, .view-display-id-page_locations .view-content .views-row .taxonomy-term .display a:active, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term h2 a:hover, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term .display a:hover, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term h2 a:focus, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term .display a:focus, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term h2 a:active, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term .display a:active {
   color: #F0F3F5;
   text-decoration: underline;
 }
 
-.view-display-id-block_locations .view-content .views-row .taxonomy-term img, .view-display-id-page_locations .view-content .views-row .taxonomy-term img {
+.view-display-id-block_locations .view-content .views-row .taxonomy-term img, .view-display-id-page_locations .view-content .views-row .taxonomy-term img, .view-display-id-homepagetiles .view-content .views-row .taxonomy-term img {
   display: block;
 }
 
@@ -10696,7 +10697,7 @@ body #content .view.view-latest-news-slider .slider-controls ul li {
   width: 100% !important;
 }
 
-body.page-our-locations #content .no-sidebar .view, body.page-events #content .no-sidebar .view, body.page-publications #content .no-sidebar .view, body.page-news-media #content .no-sidebar .view {
+body.page-our-locations #content .no-sidebar .view, body.page-events #content .no-sidebar .view, body.page-publications #content .no-sidebar .view, body.page-news-media #content .no-sidebar .view, body.page-pastevents #content .no-sidebar .view {
   max-width: 73.125rem;
   margin-left: auto;
   margin-right: auto;
@@ -10706,47 +10707,47 @@ body.page-our-locations #content .no-sidebar .view, body.page-events #content .n
 }
 
 @media (min-width: 768px) {
-  body.page-our-locations #content .no-sidebar .views-row, body.page-events #content .no-sidebar .views-row, body.page-publications #content .no-sidebar .views-row, body.page-news-media #content .no-sidebar .views-row {
+  body.page-our-locations #content .no-sidebar .views-row, body.page-events #content .no-sidebar .views-row, body.page-publications #content .no-sidebar .views-row, body.page-news-media #content .no-sidebar .views-row, body.page-pastevents #content .no-sidebar .views-row {
     float: left;
     display: block;
     margin-right: 2.7461357194%;
     width: 31.502576187%;
   }
-  body.page-our-locations #content .no-sidebar .views-row:last-child, body.page-events #content .no-sidebar .views-row:last-child, body.page-publications #content .no-sidebar .views-row:last-child, body.page-news-media #content .no-sidebar .views-row:last-child {
+  body.page-our-locations #content .no-sidebar .views-row:last-child, body.page-events #content .no-sidebar .views-row:last-child, body.page-publications #content .no-sidebar .views-row:last-child, body.page-news-media #content .no-sidebar .views-row:last-child, body.page-pastevents #content .no-sidebar .views-row:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 768px) {
-  body.page-our-locations #content .no-sidebar .views-row:nth-child(3n), body.page-events #content .no-sidebar .views-row:nth-child(3n), body.page-publications #content .no-sidebar .views-row:nth-child(3n), body.page-news-media #content .no-sidebar .views-row:nth-child(3n) {
+  body.page-our-locations #content .no-sidebar .views-row:nth-child(3n), body.page-events #content .no-sidebar .views-row:nth-child(3n), body.page-publications #content .no-sidebar .views-row:nth-child(3n), body.page-news-media #content .no-sidebar .views-row:nth-child(3n), body.page-pastevents #content .no-sidebar .views-row:nth-child(3n) {
     margin-right: 0;
   }
 }
 
-body.page-our-locations #content .has-sidebar .view, body.page-events #content .has-sidebar .view, body.page-publications #content .has-sidebar .view, body.page-news-media #content .has-sidebar .view {
+body.page-our-locations #content .has-sidebar .view, body.page-events #content .has-sidebar .view, body.page-publications #content .has-sidebar .view, body.page-news-media #content .has-sidebar .view, body.page-pastevents #content .has-sidebar .view {
   max-width: 48.75rem;
 }
 
 @media (min-width: 768px) {
-  body.page-our-locations #content .has-sidebar .views-row, body.page-events #content .has-sidebar .views-row, body.page-publications #content .has-sidebar .views-row, body.page-news-media #content .has-sidebar .views-row {
+  body.page-our-locations #content .has-sidebar .views-row, body.page-events #content .has-sidebar .views-row, body.page-publications #content .has-sidebar .views-row, body.page-news-media #content .has-sidebar .views-row, body.page-pastevents #content .has-sidebar .views-row {
     float: left;
     display: block;
     margin-right: 2.7461357194%;
     width: 48.6269321403%;
   }
-  body.page-our-locations #content .has-sidebar .views-row:last-child, body.page-events #content .has-sidebar .views-row:last-child, body.page-publications #content .has-sidebar .views-row:last-child, body.page-news-media #content .has-sidebar .views-row:last-child {
+  body.page-our-locations #content .has-sidebar .views-row:last-child, body.page-events #content .has-sidebar .views-row:last-child, body.page-publications #content .has-sidebar .views-row:last-child, body.page-news-media #content .has-sidebar .views-row:last-child, body.page-pastevents #content .has-sidebar .views-row:last-child {
     margin-right: 0;
   }
 }
 
 @media (min-width: 768px) {
-  body.page-our-locations #content .has-sidebar .views-row:nth-child(2n), body.page-events #content .has-sidebar .views-row:nth-child(2n), body.page-publications #content .has-sidebar .views-row:nth-child(2n), body.page-news-media #content .has-sidebar .views-row:nth-child(2n) {
+  body.page-our-locations #content .has-sidebar .views-row:nth-child(2n), body.page-events #content .has-sidebar .views-row:nth-child(2n), body.page-publications #content .has-sidebar .views-row:nth-child(2n), body.page-news-media #content .has-sidebar .views-row:nth-child(2n), body.page-pastevents #content .has-sidebar .views-row:nth-child(2n) {
     margin-right: 0;
   }
 }
 
 @media (min-width: 768px) {
-  body.page-our-locations #content .view .view-content, body.page-events #content .view .view-content, body.page-publications #content .view .view-content, body.page-news-media #content .view .view-content {
+  body.page-our-locations #content .view .view-content, body.page-events #content .view .view-content, body.page-publications #content .view .view-content, body.page-news-media #content .view .view-content, body.page-pastevents #content .view .view-content {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -10757,14 +10758,14 @@ body.page-our-locations #content .has-sidebar .view, body.page-events #content .
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
   }
-  body.page-our-locations #content .view .view-content::after, body.page-events #content .view .view-content::after, body.page-publications #content .view .view-content::after, body.page-news-media #content .view .view-content::after {
+  body.page-our-locations #content .view .view-content::after, body.page-events #content .view .view-content::after, body.page-publications #content .view .view-content::after, body.page-news-media #content .view .view-content::after, body.page-pastevents #content .view .view-content::after {
     clear: both;
     content: "";
     display: table;
   }
 }
 
-body.page-our-locations #content .view .view-content .views-row .node, body.page-events #content .view .view-content .views-row .node, body.page-publications #content .view .view-content .views-row .node, body.page-news-media #content .view .view-content .views-row .node {
+body.page-our-locations #content .view .view-content .views-row .node, body.page-events #content .view .view-content .views-row .node, body.page-publications #content .view .view-content .views-row .node, body.page-news-media #content .view .view-content .views-row .node, body.page-pastevents #content .view .view-content .views-row .node {
   box-sizing: border-box;
   position: relative;
   padding: 1.875rem;
@@ -10775,32 +10776,32 @@ body.page-our-locations #content .view .view-content .views-row .node, body.page
   padding-right: 0;
 }
 
-body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail, body.page-events #content .view .view-content .views-row .node.has-thumbnail, body.page-publications #content .view .view-content .views-row .node.has-thumbnail, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail {
+body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail, body.page-events #content .view .view-content .views-row .node.has-thumbnail, body.page-publications #content .view .view-content .views-row .node.has-thumbnail, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail, body.page-pastevents #content .view .view-content .views-row .node.has-thumbnail {
   padding-top: 17.1875rem;
 }
 
-body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image {
+body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image, body.page-pastevents #content .view .view-content .views-row .node.has-thumbnail .field-type-image {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
 }
 
-body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a {
+body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a, body.page-pastevents #content .view .view-content .views-row .node.has-thumbnail .field-type-image a {
   display: block;
   border-bottom: 0;
   transition: none;
 }
 
-body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus {
+body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus, body.page-pastevents #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover, body.page-pastevents #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus {
   background-color: black;
 }
 
-body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img {
+body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img, body.page-pastevents #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:hover img, body.page-pastevents #content .view .view-content .views-row .node.has-thumbnail .field-type-image a:focus img {
   opacity: 0.6;
 }
 
-body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image img {
+body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image img, body.page-pastevents #content .view .view-content .views-row .node.has-thumbnail .field-type-image img {
   display: table;
   font-family: "object-fit:cover;object-position:center";
   object-fit: cover;
@@ -10809,25 +10810,25 @@ body.page-our-locations #content .view .view-content .views-row .node.has-thumbn
   width: 100%;
 }
 
-body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2) {
+body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-events #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-publications #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2), body.page-pastevents #content .view .view-content .views-row .node.has-thumbnail .field-type-image .field-item:nth-child(n + 2) {
   display: none;
 }
 
-body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail h2, body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .display, body.page-events #content .view .view-content .views-row .node.has-thumbnail h2, body.page-events #content .view .view-content .views-row .node.has-thumbnail .display, body.page-publications #content .view .view-content .views-row .node.has-thumbnail h2, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .display, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail h2, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .display {
+body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail h2, body.page-our-locations #content .view .view-content .views-row .node.has-thumbnail .display, body.page-events #content .view .view-content .views-row .node.has-thumbnail h2, body.page-events #content .view .view-content .views-row .node.has-thumbnail .display, body.page-publications #content .view .view-content .views-row .node.has-thumbnail h2, body.page-publications #content .view .view-content .views-row .node.has-thumbnail .display, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail h2, body.page-news-media #content .view .view-content .views-row .node.has-thumbnail .display, body.page-pastevents #content .view .view-content .views-row .node.has-thumbnail h2, body.page-pastevents #content .view .view-content .views-row .node.has-thumbnail .display {
   margin-top: 1.875rem;
 }
 
-body.page-our-locations #content .view .view-content .views-row .node > .links li, body.page-events #content .view .view-content .views-row .node > .links li, body.page-publications #content .view .view-content .views-row .node > .links li, body.page-news-media #content .view .view-content .views-row .node > .links li {
+body.page-our-locations #content .view .view-content .views-row .node > .links li, body.page-events #content .view .view-content .views-row .node > .links li, body.page-publications #content .view .view-content .views-row .node > .links li, body.page-news-media #content .view .view-content .views-row .node > .links li, body.page-pastevents #content .view .view-content .views-row .node > .links li {
   padding-left: 0;
 }
 
-body.page-our-locations #content .view .view-content .views-row h2, body.page-our-locations #content .view .view-content .views-row .display, body.page-events #content .view .view-content .views-row h2, body.page-events #content .view .view-content .views-row .display, body.page-publications #content .view .view-content .views-row h2, body.page-publications #content .view .view-content .views-row .display, body.page-news-media #content .view .view-content .views-row h2, body.page-news-media #content .view .view-content .views-row .display {
+body.page-our-locations #content .view .view-content .views-row h2, body.page-our-locations #content .view .view-content .views-row .display, body.page-events #content .view .view-content .views-row h2, body.page-events #content .view .view-content .views-row .display, body.page-publications #content .view .view-content .views-row h2, body.page-publications #content .view .view-content .views-row .display, body.page-news-media #content .view .view-content .views-row h2, body.page-news-media #content .view .view-content .views-row .display, body.page-pastevents #content .view .view-content .views-row h2, body.page-pastevents #content .view .view-content .views-row .display {
   font-size: 1.5rem;
   line-height: 1.5em;
   margin-top: 0;
 }
 
-body.page-our-locations #content .view .view-content .views-row .field-name-field-date, body.page-our-locations #content .view .view-content .views-row .submitted, body.page-our-locations #content .view .view-content .views-row .field-type-datetime, body.page-events #content .view .view-content .views-row .field-name-field-date, body.page-events #content .view .view-content .views-row .submitted, body.page-events #content .view .view-content .views-row .field-type-datetime, body.page-publications #content .view .view-content .views-row .field-name-field-date, body.page-publications #content .view .view-content .views-row .submitted, body.page-publications #content .view .view-content .views-row .field-type-datetime, body.page-news-media #content .view .view-content .views-row .field-name-field-date, body.page-news-media #content .view .view-content .views-row .submitted, body.page-news-media #content .view .view-content .views-row .field-type-datetime {
+body.page-our-locations #content .view .view-content .views-row .field-name-field-date, body.page-our-locations #content .view .view-content .views-row .submitted, body.page-our-locations #content .view .view-content .views-row .field-type-datetime, body.page-events #content .view .view-content .views-row .field-name-field-date, body.page-events #content .view .view-content .views-row .submitted, body.page-events #content .view .view-content .views-row .field-type-datetime, body.page-publications #content .view .view-content .views-row .field-name-field-date, body.page-publications #content .view .view-content .views-row .submitted, body.page-publications #content .view .view-content .views-row .field-type-datetime, body.page-news-media #content .view .view-content .views-row .field-name-field-date, body.page-news-media #content .view .view-content .views-row .submitted, body.page-news-media #content .view .view-content .views-row .field-type-datetime, body.page-pastevents #content .view .view-content .views-row .field-name-field-date, body.page-pastevents #content .view .view-content .views-row .submitted, body.page-pastevents #content .view .view-content .views-row .field-type-datetime {
   font-size: 0.875rem;
   color: #717171;
   text-transform: uppercase;
@@ -10835,11 +10836,11 @@ body.page-our-locations #content .view .view-content .views-row .field-name-fiel
   margin-bottom: 1.375rem;
 }
 
-body.page-our-locations #content .view .view-content .views-row .field-name-body, body.page-events #content .view .view-content .views-row .field-name-body, body.page-publications #content .view .view-content .views-row .field-name-body, body.page-news-media #content .view .view-content .views-row .field-name-body {
+body.page-our-locations #content .view .view-content .views-row .field-name-body, body.page-events #content .view .view-content .views-row .field-name-body, body.page-publications #content .view .view-content .views-row .field-name-body, body.page-news-media #content .view .view-content .views-row .field-name-body, body.page-pastevents #content .view .view-content .views-row .field-name-body {
   color: #313131;
 }
 
-body.page-our-locations #content .view .pager, body.page-events #content .view .pager, body.page-publications #content .view .pager, body.page-news-media #content .view .pager {
+body.page-our-locations #content .view .pager, body.page-events #content .view .pager, body.page-publications #content .view .pager, body.page-news-media #content .view .pager, body.page-pastevents #content .view .pager {
   margin-top: 1.375rem;
   margin-bottom: 1.375rem;
 }

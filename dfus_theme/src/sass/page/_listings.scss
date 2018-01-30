@@ -85,7 +85,7 @@
 }
 
 // Implementations of the generic view.
-body.page-our-locations, body.page-events, body.page-publications, body.page-news-media {
+body.page-our-locations, body.page-events, body.page-publications, body.page-news-media, body.page-pastevents {
   #content {
     @include generic-view-layout;
   }
